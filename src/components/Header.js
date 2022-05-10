@@ -1,9 +1,10 @@
 import { NavLink } from 'react-router-dom';
+import React from 'react';
 import planet from '../assets/planet.png';
-import styles from './Header.module.css';
+import './Header.module.css';
 
-const Header = () => {
-  return {
+function Header() {
+  return (
     <header>
       <NavLink to="/">
         <img src={planet} alt="logo" className="logo-img" />
@@ -11,17 +12,25 @@ const Header = () => {
       </NavLink>
       <nav className="header__nav">
         <ul>
-        <li>
-            <NavLink 
-              className={({ isActive }) => ( isActive ? 'active' : '')}
+          <li>
+            <NavLink
+              className={({ isActive }) => (isActive ? 'active' : '')}
               to="/rockets"
             >
               Rockets
             </NavLink>
-          </li> 
+          </li>
           <li>
-            <NavLink 
-              className={({ isActive }) => ( isActive ? 'active' : '')}
+            <NavLink
+              className={({ isActive }) => (isActive ? 'active' : '')}
+              to="/missions"
+            >
+              Missions
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={({ isActive }) => (isActive ? 'active' : '')}
               to="/profile"
             >
               Profile
@@ -30,7 +39,7 @@ const Header = () => {
         </ul>
       </nav>
     </header>
-  }
-};
+  );
+}
 
 export default Header;
