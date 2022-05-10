@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+REACT README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-## Available Scripts
+# Space Travelers' Hub
 
-In the project directory, you can run:
+> "This project consumes real live data from the SpaceX API. This application is built for a fake company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions." 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Built With
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- REACT
+- REDUX
+- SpaceX API
+- HTML & CSS
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get a local copy up and running follow these simple example steps.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
+- Text Editor | Git and Github set up
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Setup
+- Clone repository and open with text editor
 
-### `npm run eject`
+### Dependencies
+- Run npm install - to load necessary files from package.json
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Linter Setup
+- Apply Linter checks with the following instructions
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Stylelint: Install stylelint for clean Styles and elimination of related errors.
+ Run:`npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x`
+ Afterwards create a `.stylelintrc.json` file and then run `npx stylelint "**/*.{css,scss}"` to check errors. Use `npx stylelint "**/*.{css,scss}" --fix` to fix multiple errors.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Eslint: To find and fix script errors, run `npm install --save-dev eslint@7.x eslint-config-airbnb@18.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@4.x @babel/eslint-parser@7.x @babel/core@7.x  @babel/plugin-syntax-jsx@7.x  @babel/preset-react@7.x @babel/preset-react@7.x`
+After, create a `.eslintrc.json` file.
+Then run `npx eslint .` to print errors. 
+Use `npx eslint . --fix` to fix multiple errors.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Usage
+- View APP 
+- Click on a Reserve Rocket to book a rocket
+- Click on Cancel Reservation to un-book a rocket
+- Click on Join a mission to book missions
+- View Active Member 
+- Click on Leave mission to un-book mission
+- View Not a Member
+- View booked missions and Rockets in My Profile
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Authors
+👤 **Oybek Kayumov**
 
-### Code Splitting
+- GitHub: [@OybekKayumov](https://github.com/OybekKayumov)
+- Twitter: [@KayumovOybek](https://twitter.com/KayumovOybek)
+- LinkedIn: [Oybek Kayumov](https://www.linkedin.com/in/oybek-kayumov/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+👤 **STEVE W DAMES JR**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- GitHub: [@githubhandle](https://github.com/steveWDamesJr)
+- Twitter: [@twitterhandle](https://twitter.com/Steve88312331)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/steve-w-dames-jr/)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🤝 Contributing
 
-### Advanced Configuration
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Feel free to check the [issues page]('https://github.com/steveWDamesJr/space-travelers-hub/issues')
 
-### Deployment
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Give a ⭐️ if you like this project!
 
-### `npm run build` fails to minify
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Hat tip to anyone whose code was used
+- etc
+- Images: <a href="https://www.flaticon.com/free-icons/planet" title="planet icons">Planet icons created by Freepik - Flaticon</a> 
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
+
