@@ -32,7 +32,7 @@ const ElementRockets = (props) => {
             Cancel Reservation
           </button>
         ) : (
-          <button type="button" className={styles.addReservation} onClick={handleReserveClick}>
+          <button type="button" variant="danger" className={styles.addReservation} onClick={handleReserveClick}>
             Reserve Rocket
           </button>
         )}
