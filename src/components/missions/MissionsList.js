@@ -19,7 +19,9 @@ const MissionsList = () => {
           <MissionsItem
             name={mission.mission_name}
             key={mission.mission_id}
+            id={mission.mission_id}
             description={mission.mission_description}
+            reserved={mission.reserved}
           />
         ))}
       </tbody>
