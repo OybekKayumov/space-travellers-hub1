@@ -3,12 +3,11 @@ import { useSelector } from 'react-redux';
 import RocketItem from '../components/rockets/elementRockets';
 import styles from '../components/rockets/Rockets.module.css';
 
-const rocketList = useSelector((state) => state.rocketReducer);
-
 function Rockets() {
+  const rocketList = useSelector((state) => state.rocketReducer);
   return (
     <ul className={styles.flex}>
-      { rocketList.map((item) => (
+      {rocketList.map((item) => (
         <RocketItem
           desc={item.desc}
           key={item.id}

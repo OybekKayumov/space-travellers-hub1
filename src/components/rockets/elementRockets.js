@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { PropTypes } from 'prop-types';
 import { addRocketReservation, removeRocketReservation } from '../../redux/rockets/rockets';
 
-const elementRockets = (props) => {
+const ElementRockets = (props) => {
   const dispatch = useDispatch();
 
   const {
@@ -24,7 +24,7 @@ const elementRockets = (props) => {
         <h2>{name}</h2>
         <p>
           { reserved && <span>Reserved</span>}
-          {`${desc}`}
+          { `${desc}` }
         </p>
         { reserved ? (
           <button type="button" className="remove-reservation" onClick={handleRemoveReserveClick}>
@@ -40,7 +40,7 @@ const elementRockets = (props) => {
   );
 };
 
-elementRockets.propTypes = {
+ElementRockets.propTypes = {
   name: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
@@ -48,4 +48,4 @@ elementRockets.propTypes = {
   reserved: PropTypes.bool.isRequired,
 };
 
-export default elementRockets;
+export default ElementRockets;
