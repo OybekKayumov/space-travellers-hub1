@@ -12,10 +12,10 @@ const ProfileMissions = (props) => {
   };
 
   return (
-    <>
+    <tr>
       <th>{name}</th>
       <td><Button type="button" variant="danger" className="remove-reservation" onClick={handleLeaveMission}>Leave Mission</Button></td>
-    </>
+    </tr>
   );
 };
 
