@@ -6,14 +6,18 @@ const baseURL = 'https://api.spacexdata.com/v3/missions';
 const initialState = [];
 
 // actions
-export const joinMission = (payload) => ({
+export const joinMission = (id) => ({
   type: JOIN_MISSION,
-  payload,
+  payload: {
+    id,
+  },
 });
 
-export const leaveMission = (payload) => ({
+export const leaveMission = (id) => ({
   type: LEAVE_MISSION,
-  payload,
+  payload: {
+    id,
+  },
 });
 
 export const getMission = (payload) => ({
@@ -36,10 +40,24 @@ export const fetchMissionsFromApi = () => async (dispatch) => {
 // reducers
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case JOIN_MISSION:
-      return [...state, action.payload];
-    case LEAVE_MISSION:
-      return state.filter((mission) => mission.id !== action.payload);
+    case JOIN_MISSION: {
+      const newState = state.map((mission) => {
+        if (mission.mission_id !== action.payload.id) {
+          return mission;
+        }
+        return { ...mission, reserved: true };
+      });
+      return [...newState];
+    }
+    case LEAVE_MISSION: {
+      const newState = state.map((mission) => {
+        if (mission.mission_id !== action.payload.id) {
+          return mission;
+        }
+        return { ...mission, reserved: false };
+      });
+      return [...newState];
+    }
     case GET_MISSIONS:
       return [...action.payload];
     default:
