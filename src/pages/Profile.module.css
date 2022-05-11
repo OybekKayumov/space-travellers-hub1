@@ -1,0 +1,13 @@
+.margin-1 {
+  margin: 1rem;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+  margin: 1rem;
+}
+
+.table {
+  width: 100px;
+}
