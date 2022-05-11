@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { PropTypes } from 'prop-types';
 import { removeRocketReservation } from '../../redux/rockets/rockets';
+import './Rockets.module.css';
 
 function ProfileRockets(props) {
   const dispatch = useDispatch();

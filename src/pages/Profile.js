@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import Table from 'react-bootstrap/Table';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import ProfileMissions from '../components/missions/ProfileMissions';
 import ProfileRockets from '../components/rockets/ProfileRockets';
 import style from './Profile.module.css';
