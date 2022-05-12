@@ -72,7 +72,7 @@ Use `npx eslint . --fix` to fix multiple errors.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]('https://github.com/steveWDamesJr/space-travelers-hub/issues')
+Feel free to check the [issues page]('https://github.com/OybekKayumov/space-travellers-hub1/issues')
 
 ## Show your support
 
