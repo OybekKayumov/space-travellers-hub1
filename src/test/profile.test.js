@@ -3,7 +3,7 @@ import '@testing-library/jest-dom/extend-expect';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import elementStore from '../redux/configureStore';
-import ProfileRocket from '../components/Rockets/ProfileRockets';
+import ProfileRockets from '../components/Rockets/ProfileRockets';
 import ProfileMissions from '../components/missions/ProfileMissions';
 import Profile from '../pages/Profile';
 
@@ -31,7 +31,7 @@ describe('test render the profile component', () => {
     const { container } = render(
       <Provider store={elementStore}>
         <Profile>
-          <ProfileRocket key={rocket[0].id} rocket={rocket[0]} />
+          <ProfileRockets key={rocket[0].id} rocket={rocket[0]} />
           <ProfileMissions key={mission[0].id} mission={mission[0]} />
         </Profile>
       </Provider>,
