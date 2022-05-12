@@ -62,7 +62,7 @@ export default function Profile() {
               ))}
             </tr>
           ) : (
-            <tr className="empty"><td>You have not joined any missions</td></tr>
+            <tr className="empty"><td>You have not joined any missions at the moment</td></tr>
           )}
         </tbody>
       </Table>
