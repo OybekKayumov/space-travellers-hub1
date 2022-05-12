@@ -1,16 +1,17 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Table from 'react-bootstrap/Table';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ProfileMissions from '../components/missions/ProfileMissions';
+import Table from 'react-bootstrap/Table';
 import ProfileRockets from '../components/rockets/ProfileRockets';
+import ProfileMissions from '../components/missions/ProfileMissions';
 import style from './Profile.module.css';
 
 export default function Profile() {
   const missionList = useSelector((state) => state.missions);
   const profileMission = missionList.filter((mission) => mission.reserved === true);
 
-  const rocketList = useSelector((state) => state.rocketReducer);
+  // const rocketList = useSelector((state) => state.rocketReducer);
+  const rocketList = useSelector((state) => state.rockets);
   const profileRocket = rocketList.filter((rocket) => rocket.reservation === true);
 
   return (

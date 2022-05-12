@@ -23,7 +23,7 @@ const MissionsItem = ({
       <th>{name}</th>
       <td>{description}</td>
       <td>{reserved ? (<Badge bg="info">Active Member</Badge>) : (<Badge bg="secondary">Not A Member</Badge>)}</td>
-      <td colSpan={2}>{reserved ? (<Button onClick={handleLeaveMission} variant="outline-danger">Leave Mission</Button>) : (<Button onClick={handleJoinMission} variant="outline-secondary">Join Mission</Button>)}</td>
+      <td colSpan={2}>{ reserved ? (<Button onClick={handleLeaveMission} variant="outline-danger">Leave Mission</Button>) : (<Button onClick={handleJoinMission} variant="outline-secondary">Join Mission</Button>)}</td>
     </tr>
   );
 };
