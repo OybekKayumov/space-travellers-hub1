@@ -17,7 +17,7 @@ a {
   display: flex;
   align-items: center;
   gap: 2rem;
-  text-decoration: none;
+  text-decoration: none !important;
   color: #000;
 }
 

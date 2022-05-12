@@ -9,10 +9,6 @@
   display: flex;
 }
 
-/* img {
-  width: 350px;
-} */
-
 .rocketContainer {
   display: flex;
   gap: 1.5rem;

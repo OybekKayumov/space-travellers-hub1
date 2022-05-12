@@ -10,16 +10,22 @@ export default function Profile() {
   const missionList = useSelector((state) => state.missions);
   const profileMission = missionList.filter((mission) => mission.reserved === true);
 
-  // const rocketList = useSelector((state) => state.rocketReducer);
   const rocketList = useSelector((state) => state.rockets);
   const profileRocket = rocketList.filter((rocket) => rocket.reservation === true);
 
   return (
     <div className={style.flex}>
-      <Table striped bordered hover size="sm">
+      <Table bordered hover>
         <thead>
           <tr>
-            <th colSpan={3}>My Rocket Reservations</th>
+            <th
+              style={{
+                padding: '5px 10px', backgroundColor: 'white',
+              }}
+              colSpan={3}
+            >
+              My Rocket Reservations
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -37,7 +43,7 @@ export default function Profile() {
           )}
         </tbody>
       </Table>
-      <Table striped bordered hover>
+      <Table bordered hover>
         <thead>
           <tr>
             <th colSpan={2}>My Missions</th>

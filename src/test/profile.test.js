@@ -5,7 +5,6 @@ import { Provider } from 'react-redux';
 import elementStore from '../redux/configureStore';
 import ProfileRocket from '../components/Rockets/ProfileRockets';
 import ProfileMissions from '../components/missions/ProfileMissions';
-// import ProfileDragons from '../components/Dragons/ProfileDragons';
 import Profile from '../pages/Profile';
 
 const rocket = [

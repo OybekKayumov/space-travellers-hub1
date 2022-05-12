@@ -15,9 +15,37 @@ function ProfileRockets(props) {
 
   return (
     <tr>
-      <th>{name}</th>
-      <td><a href={wikipedia}>Read more</a></td>
-      <td><Button type="button" variant="danger" onClick={handleCancelReservation}>Cancel Reservation</Button></td>
+      <th
+        style={{
+          padding: '12px 10px', backgroundColor: 'white',
+        }}
+      >
+        {name}
+      </th>
+      <td
+        style={{
+          padding: '12px 10px', backgroundColor: 'white',
+        }}
+      >
+        <a href={wikipedia}>
+          Read more
+        </a>
+      </td>
+      <td
+        style={{
+          padding: '12px 10px', textAlign: 'center', backgroundColor: 'white',
+        }}
+      >
+        <Button
+          type="button"
+          variant="danger"
+          className="remove-reservation"
+          onClick={handleCancelReservation}
+          style={{ width: '110px' }}
+        >
+          Cancel Reservation
+        </Button>
+      </td>
     </tr>
   );
 }

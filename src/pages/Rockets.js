@@ -5,7 +5,6 @@ import RocketItem from '../components/rockets/elementRockets';
 import styles from '../components/rockets/Rockets.module.css';
 
 function Rockets() {
-  // const rocketList = useSelector((state) => state.rocketReducer);
   const rocketList = useSelector((state) => state.rockets);
   return (
     <Container>
