@@ -1,6 +1,5 @@
 import { useDispatch } from 'react-redux';
 import { PropTypes } from 'prop-types';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import { addRocketReservation, removeRocketReservation } from '../../redux/rockets/rockets';
 import styles from './Rockets.module.css';
