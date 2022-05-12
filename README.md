@@ -17,7 +17,6 @@ REACT README
 
 ## Getting Started
 
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
@@ -43,6 +42,7 @@ Use `npx eslint . --fix` to fix multiple errors.
 
 
 ### Usage
+
 - View APP 
 - Click on a Reserve Rocket to book a rocket
 - Click on Cancel Reservation to un-book a rocket
@@ -53,7 +53,15 @@ Use `npx eslint . --fix` to fix multiple errors.
 - View booked missions and Rockets in My Profile
 
 
+### Testing
+
+- open `src/__test__` folder
+- Enter any test file
+- Run `npm test` to test all files
+
+
 ## Authors
+
 👤 **Oybek Kayumov**
 
 - GitHub: [@OybekKayumov](https://github.com/OybekKayumov)
