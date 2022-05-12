@@ -6,7 +6,7 @@ import './Header.module.css';
 function Header() {
   return (
     <header>
-      <NavLink to="/">
+      <NavLink to="/rockets">
         <img src={planet} alt="logo" className="logo-img" />
         <h1 className="title">Space Travelers Hub</h1>
       </NavLink>

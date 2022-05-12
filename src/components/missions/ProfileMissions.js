@@ -13,8 +13,21 @@ const ProfileMissions = (props) => {
 
   return (
     <tr>
-      <th>{name}</th>
-      <td><Button type="button" variant="danger" className="remove-reservation" onClick={handleLeaveMission}>Leave Mission</Button></td>
+      <th style={{ padding: '10px 10px', width: '100%', borderBottom: '1px solid #EEE' }}>{name}</th>
+      <td style={{
+        padding: '12px 10px', textAlign: 'center', backgroundColor: 'white', width: '200px', borderBottom: '1px solid #EEE',
+      }}
+      >
+        <Button
+          type="button"
+          variant="danger"
+          className="remove-reservation"
+          onClick={handleLeaveMission}
+          style={{ width: '100px' }}
+        >
+          Leave Mission
+        </Button>
+      </td>
     </tr>
   );
 };

@@ -1,7 +1,9 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { PropTypes } from 'prop-types';
+import Button from 'react-bootstrap/Button';
 import { removeRocketReservation } from '../../redux/rockets/rockets';
+import './Rockets.module.css';
 
 function ProfileRockets(props) {
   const dispatch = useDispatch();
@@ -12,13 +14,39 @@ function ProfileRockets(props) {
   };
 
   return (
-    <li className="reserved-rocket__container" id={id}>
-      <h3>{name}</h3>
-      <div className="reserved-rocket__buttons">
-        <a href={wikipedia}>Read more</a>
-        <button type="button" className="remove-reservation" onClick={handleCancelReservation}>Cancel Reservation</button>
-      </div>
-    </li>
+    <tr>
+      <th
+        style={{
+          padding: '12px 10px', backgroundColor: 'white',
+        }}
+      >
+        {name}
+      </th>
+      <td
+        style={{
+          padding: '12px 10px', backgroundColor: 'white',
+        }}
+      >
+        <a href={wikipedia}>
+          Read more
+        </a>
+      </td>
+      <td
+        style={{
+          padding: '12px 10px', textAlign: 'center', backgroundColor: 'white',
+        }}
+      >
+        <Button
+          type="button"
+          variant="danger"
+          className="remove-reservation"
+          onClick={handleCancelReservation}
+          style={{ width: '110px' }}
+        >
+          Cancel Reservation
+        </Button>
+      </td>
+    </tr>
   );
 }
 
