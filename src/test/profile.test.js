@@ -3,7 +3,7 @@ import '@testing-library/jest-dom/extend-expect';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import elementStore from '../redux/configureStore';
-import ProfileRockets from '../components/Rockets/ProfileRockets';
+import ProfileRockets from '../components/rockets/ProfileRockets';
 import ProfileMissions from '../components/missions/ProfileMissions';
 import Profile from '../pages/Profile';
 
