@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test render the profile component profile section renders a hardcoded obj, passed as a prop 1`] = `
+<div>
+  <div
+    class="flex"
+  >
+    <table
+      class="table table-bordered table-hover"
+    >
+      <thead>
+        <tr>
+          <th
+            colspan="3"
+            style="padding: 5px 10px; background-color: white;"
+          >
+            My Rocket Reservations
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="empty"
+        >
+          <td>
+            No Rockets have been reserved
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table
+      class="table table-bordered table-hover"
+    >
+      <thead>
+        <tr>
+          <th
+            colspan="2"
+          >
+            My Missions
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="empty"
+        >
+          <td>
+            You have not joined any missions at the moment
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
