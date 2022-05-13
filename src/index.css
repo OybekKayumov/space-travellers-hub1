@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: monospace;
+}
+
+.active {
+  border-bottom: 3px solid red;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}

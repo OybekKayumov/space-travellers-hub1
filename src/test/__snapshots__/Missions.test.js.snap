@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test renders the Missions component missions section renders a hardcoded object, passed as a prop 1`] = `
+<div>
+  <div
+    style="width: 90%; margin-left: auto; margin-right: auto;"
+  >
+    <table
+      class="table table-striped table-bordered table-hover"
+    >
+      <thead>
+        <tr>
+          <th>
+            Missions
+          </th>
+          <th>
+            Description
+          </th>
+          <th>
+            Status
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </div>
+</div>
+`;
