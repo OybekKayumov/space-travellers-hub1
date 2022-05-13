@@ -6,6 +6,13 @@ REACT README
 
 > "This project consumes real live data from the SpaceX API. This application is built for a fake company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions."
 
+![image](https://user-images.githubusercontent.com/85465559/168192519-4c238698-c85a-4912-8df4-735844c59818.png)
+
+![image](https://user-images.githubusercontent.com/85465559/168192606-20a18143-c40c-461e-b4f9-e90f7e4c1f99.png)
+
+![image](https://user-images.githubusercontent.com/85465559/168192681-2a0c1d30-4bb7-417a-9bca-16bf4e9623e1.png)
+
+
 ## Built With
 
 - REACT
